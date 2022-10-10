@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* header */
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_inner{
+    display: flex;
+}
+.header_logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: 50px;
+
+}
+/*.img{
+}*/
+
+/* Navigation */
+.nav{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-right: 50px;
+    padding-left: 50px ;
+}
+.nav_link{
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+.nav_link:hover {
+    color: palevioletred;
+}
+
+/* Intro */
+.intro{
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ebeff5;
+}
+.companyinfo{
+    width: 1000px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.marmalade{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.text{
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+.pic_1{
+    padding: 20px 20px 20px 20px;
+    margin-right:40px;
+    margin-left:40px ;
+}
+.img{
+
+    margin-right:40px;
+    margin-left:40px ;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(101, 97, 99);
+}
+
+
+/* Delivery */
+.deliveryinfo{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: #fadde8;
+    line-height:1.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.aside{
+    background: lightpink;
+    margin-top: 100px;
+    margin-right: 20px;
+    float:right;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+}
+footer > h3{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+
+}
+footer > div{
+    border: 10px dotted lightpink;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+address > a{
+    padding: 5px 5px 5px 5px;
+    color: palevioletred;
+    font-size: 25px;
+    text-decoration: none;
+}
+.address{
+
+}
+address > a:hover{
+    background: #DAEAF1;
+    border-radius: 5px;
+}
+
+address > a:visited{
+    color: #276880;
+}
+address > a:active{
+    color: #C65D7B;
+}
+
+
+
+
+
+
