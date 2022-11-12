@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
     <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <title>няминями</title>
     <link rel="icon" href="assets/images/caticon.ico" sizes="any">
     <style>
         p { text-indent: 10px; }
+        .text>ul{
+            list-style-image: url(assets/images/list.png);
+            size: 10px;
+        }
     </style>
 </head>
 <body>
+<div class = "header_pic"></div>
 <header class = "header">
     <div class="header_inner">
         <div class = "header_logo">НямиНями</div>
@@ -24,18 +31,18 @@
     </nav>
 </header>
 <main>
-    <div id = "intro" class = "intro">
-
-        <section class = "companyinfo"><h2>О нашем магазине!</h2> <p> Интернет-магазин удобен для совершения покупок – просто выбирайте сладости с напитками и оформляйте заказ. Если вы регистрируетесь на нашем сайте, на следующие покупки получаете скидку. Вы сможете купить товар по цене ниже на 10%. </p>В Москве доступен самовывоз из любой ближайшей точки розничной продажи.<p>
+    <div id = "intro">
+        <div class = "companyinfo"><h2>О нашем магазине!</h2> <p> Интернет-магазин удобен для совершения покупок – просто выбирайте сладости с напитками и оформляйте заказ. Если вы регистрируетесь на нашем сайте, на следующие покупки получаете скидку. Вы сможете купить товар по цене ниже на 10%. </p>В Москве доступен самовывоз из любой ближайшей точки розничной продажи.<p>
 
             Посетите любой наш оффлайн магазин и выбирайте вкусности лично. Огромный ассортимент вкусностей приведет в настоящий восторг не только детей, но и взрослых. Не отказывайте себе в удовольствии, ведь сладкие вкусности отлично подымают настроение и помогают улучшить настроение даже после тяжелого неудачного дня.</p>
 
-           <p> При покупках на сумму более 3 тысяч рублей предоставляется бесплатная доставка лучших сладостей. Для безопасности в связи с карантинными ограничениями передача выполняется бесконтактно. В любое время для шумной компании или себя любимого заказывайте сладости всего в пару кликов. Доставка осуществляется во все регионы России.</p></section>
-
-        <img class = "img" src ="assets/images/pic_1.jpg" alt = "sweets" width="300px">
+           <p> При покупках на сумму более 3 тысяч рублей предоставляется бесплатная доставка лучших сладостей. Для безопасности в связи с карантинными ограничениями передача выполняется бесконтактно. В любое время для шумной компании или себя любимого заказывайте сладости всего в пару кликов. Доставка осуществляется во все регионы России.</p></div>
+        <img class = "img" src ="assets/images/pic_1.jpg" alt = "sweets" width="300px" >
     </div>
+    <div><a href="#top" class="idTop"><img src='assets/images/up.png' width="50px">
+    </a></div>
     <div class = "marmalade">
-    <article class="text"><h2>Мармелад.</h2>Мармелад получают выпариванием смеси фруктов и ягод с сахаром, веществом, придающим ей желеобразное состояние, патокой и пищевыми кислотами. В смесь добавляют красители для придания готовому продукту яркого цвета и ароматизаторы.
+    <h2>Мармелад.</h2>Мармелад получают выпариванием смеси фруктов и ягод с сахаром, веществом, придающим ей желеобразное состояние, патокой и пищевыми кислотами. В смесь добавляют красители для придания готовому продукту яркого цвета и ароматизаторы.
 
         Применяют такие желирующие вещества, придающие мармеладу упругую консистенцию:
         <ul>
@@ -45,14 +52,10 @@
             <li>Модифицированный крахмал, который получают из обычного крахмала. Он поднимает калорийность и несколько ухудшает вкус.</li>
         <p>Одно их этих веществ придает продукту то вид, по которому его узнают.
         </ul>
-    </article>
         <img class="img" src ="assets/images/pic_3.jpg" alt = "kit" width="350px">
-
     </div>
     <div id="delivery" class = "deliveryinfo"><section class = "delivery">
-        <div>
-            <h2>Доставка!</h2>
-        </div>
+        <h2>Доставка!</h2>
         <p>Вы можете заказать доставку товара с помощью курьера, который прибудет по указанному адресу в будние дни и выходные с 9.00 до 20.00. Курьерская служба, после поступления товара на склад, свяжется с вами и предложит выбрать удобное время доставки. Уточнит адрес.</p>
 
         <p><strong>Важно!</strong> Доставка курьером осуществляется только по г. Москве.</p>
@@ -70,18 +73,37 @@
             <li>СДЭК</li></ul>
     </aside>
     </div>
+    <div class = "registration">
+        <p>Зарегитрируйтесь, чтобы получать от нас новости о новинках и акциях прямиком на свою почту!</p>
+        <div class = "form">
+        <img src = "assets/images/boquet.jpg" alt = "boquet">
+            <form method="get" action="">
+                <fieldset>
+                    <legend><strong>Регистрация</strong></legend>
+                <div>
+                    <label for="name">Имя</label>
+                    <input id = "name" type="text" name="name" required>
+                </div>
+                <div>
+                    <label for = "email">E-mail</label>
+                    <input id = "email" type="email" name="email" required>
+                </div>
+                <button type="submit">Подписаться!</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </div>
 </main>
  <footer>
-     <h3 id = "contact_info">Если у Вас остались вопросы, Вы всегда можете связаться со мной <3 </h3>
-     <div>
-         <img class = "img" src = "assets/images/me.jpg" alt = "the creator" width="400">
+     <div id = "contact_info">
+         <img src="assets/images/me.jpg" alt = "the creator" width="120px">
          <address>
          <a href="tel:89771730136">Связаться по телефону: 8-977-173-01-36</a> <br>
          <a href="mailto:xiao.rar@yandex.ru">Связаться по почте: miwwoHG@gmail.com</a><br>
          <a href="https://github.com/miwwo">Мой GitHub: github.com/miwwo </a><br>
          <a href="https://vk.com/qwqccxbybn5">Вконтакте: qwqccxbybn5 </a>
      </address>
-
      </div>
  </footer>
 </body>
